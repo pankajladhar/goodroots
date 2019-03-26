@@ -1,1 +1,11 @@
-{"version":2,"name":"goodroots","builds":[{"src":"**/*.js","use":"@now/node"}]}
+{
+    "version": 2,
+    "name": "goodroots",
+    "builds": [
+        {
+            "src": "**/*.js",
+            "use": "@now/node",
+            "config": { "maxLambdaSize": "50mb" }
+        }
+    ]
+}
