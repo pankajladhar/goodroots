@@ -5,7 +5,7 @@ var path = require('path');
 var crypto = require('crypto');
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'))
+app.use(express.static(__dirname + '/public'))
 
 const key = "yGf2xak9";
 const salt = "Vg1fM0UYz9";
